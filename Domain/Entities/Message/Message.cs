@@ -7,5 +7,11 @@
         public Guid PersonId { get; set; }
 
         public Guid ChatId { get; set; }
+
+        public Person? Person { get; set; }
+
+        public Chat? Chat { get; set; }
+
+        public Attachment? Attachment { get; set; }
     }
 }

@@ -6,6 +6,8 @@
 
         public string? Description { get; set; }
 
-        public ICollection<Message> Messages { get; set; } = null!;
+        public ICollection<Message>? Messages { get; set; }
+
+        public ICollection<Person>? Persons { get; set; }
     }
 }

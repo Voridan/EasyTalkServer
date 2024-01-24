@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Entities.Attachment
+﻿namespace Domain.Entities
 {
-    public class Attachment: BaseEntity
+    public class Attachment
     {
+        public Guid MessageId { get; set; }
+
+        public DateTime CreatedDate { get; set; }
+
+        public DateTime ModifiedDate { get; set; }
+
         public string? Name { get; set; }
 
         public string? StoragePath { get; set; }
 
-        public Guid MessageId { get; set; }
-
+        public Message? Message { get; set; }
     }
 }

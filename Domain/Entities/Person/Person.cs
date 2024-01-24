@@ -20,13 +20,13 @@
 
         public string? PhotoLocation { get; set; }
 
-        public ICollection<Chat> Chats { get; set; } = null!;
-
         public Client? Client { get; set; }
 
         public Freelancer? Freelancer { get; set; }
 
-        public ICollection<Project>? Projects { get; set; }
+        public ICollection<Chat> Chats { get; set; } = null!;
+
+        public ICollection<Message> Messages { get; set; } = null!;
     }
 
     public enum Gender
