@@ -7,6 +7,5 @@
         public string? Name { get; set; }
 
         public ICollection<Freelancer>? Freelancers { get; set; }
-
     }
 }

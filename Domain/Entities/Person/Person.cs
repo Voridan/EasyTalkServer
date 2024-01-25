@@ -1,4 +1,5 @@
-﻿namespace Domain.Entities
+﻿
+namespace Domain.Entities
 {
     public class Person: BaseEntity
     {
@@ -19,6 +20,8 @@
         public string? Salt { get; set; }
 
         public string? PhotoLocation { get; set; }
+
+        public string? Country { get; set; }
 
         public Client? Client { get; set; }
 

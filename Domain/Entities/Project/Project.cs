@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using Domain.Enums;
+
+namespace Domain.Entities
 {
     public class Project: BaseEntity
     {
@@ -8,7 +10,7 @@
 
         public decimal? Price { get; set; }
 
-        public string? Status { get; set; }
+        public ProjectStatus? Status { get; set; }
 
         public Guid ClientId { get; set; }
 

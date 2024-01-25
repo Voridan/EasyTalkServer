@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using Domain.Enums;
+
+namespace Domain.Entities
 {
     public class Freelancer
     {
@@ -8,9 +10,9 @@
 
         public DateTime? ModifiedDate { get; set; }
 
-        public string? Specialization { get; set; }
+        public Specialization? Specialization { get; set; }
 
-        public int Rate { get; set; }
+        public uint Rate { get; set; }
         
         public Person? Person { get; set; } = null!;
 

@@ -8,6 +8,6 @@
 
         public ICollection<Message>? Messages { get; set; }
 
-        public ICollection<Person>? Persons { get; set; }
+        public ICollection<Person>? People { get; set; }
     }
 }
