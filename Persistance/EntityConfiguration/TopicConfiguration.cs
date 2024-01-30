@@ -22,7 +22,7 @@ namespace Persistance.EntityConfiguration
             builder
                 .HasOne(t => t.Project)
                 .WithMany(p => p.Topics)
-                .HasForeignKey(t => t.Project)
+                .HasForeignKey(t => t.ProjectId)
                 .IsRequired();
             builder
                 .HasMany(t => t.Chatshots)

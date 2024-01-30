@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Persistance.Database
 {
-    internal class AppDbContext : DbContext
+    public class AppDbContext : DbContext
     {
         public AppDbContext() : base() { }
 
-        public AppDbContext(DbContextOptions options) : base(options) { }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
